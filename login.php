@@ -45,7 +45,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		exit;
 	} else {
 		// Invalid credentials, show error message
-		$error_message = "Invalid username or password.";
+		$error_message = "عيد الباسوورد او اسم المستخدم تاني";
+		echo "<p>$error_message</p>";
+		echo '<img src="again.jpg" alt="Error">';
 	}
 }
 
