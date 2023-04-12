@@ -13,13 +13,14 @@ session_start();
 if (isset($_SESSION['username'])) {
 	$username = $_SESSION['username'];
 	echo "Hello $username!";
+	echo "<img src='download.jpeg'>";
 } else {
 	header("Location: D:\Xampp\htdocs\Day5 Lab\login.php");
 	exit();
 }
 ?>
  
-<img src="download.jpeg" alt="">
+<!-- <img src="download.jpeg" alt=""> -->
 </body>
 </html>
 
